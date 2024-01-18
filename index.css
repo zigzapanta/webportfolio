@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 * {
 	padding: 0;
 	margin: 0;
@@ -12,6 +15,8 @@
 #navbar {
 	width: cover;
 	background-color: #c4421a;
+	position: sticky;
+
 
 }
 
@@ -86,8 +91,15 @@ a:hover {
 	background-color: #f5b56c;
 }
 
+h1 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
 
-h1, h3 {
+
+
+ h3 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 700;
    font-style: normal
@@ -109,9 +121,67 @@ h4
 	font-style: italic;
 }
 
+.carousel-inner .carousel-item {
+	margin: auto;
+}
+
+
+
+  @media only screen and (max-width: 992px) { 
+  #card1 { 
+    display: none; 
+  } 
+}
+
+
+  @media only screen and (max-width: 992px) { 
+  #card2 { 
+    display: none; 
+  } 
+}
+
+
+  @media only screen and (max-width: 992px) { 
+  #card3 { 
+    display: none; 
+  } 
+}
 
 
 
 
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+
+}
+
+#tools-logos2 {
+	overflow: hidden;
+}
+
+
+#tools-logos2:hover .movetools {
+	animation-play-state: paused;
+}
+
+.movetools {
+	white-space: nowrap;
+	animation: 8s slide infinite linear;
+}
+
+.movetools img {
+
+}
+
+  @media only screen and (max-width: 992px) { 
+  #tools-logos2 img { 
+    display: none; 
+  } 
+}
 
 
